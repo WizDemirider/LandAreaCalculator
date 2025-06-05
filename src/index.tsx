@@ -3,9 +3,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import LandAreaCalculator from './land-area-calculator.tsx';
 
-ReactDOM.render(
+const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
+root.render(
   <React.StrictMode>
     <LandAreaCalculator />
-  </React.StrictMode>,
-  document.getElementById('root')
+  </React.StrictMode>
 );
